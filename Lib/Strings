@@ -1,0 +1,9 @@
+package com.phantasyrealms.lib;
+
+public class Strings {
+
+	public static final String MODID = "pr";
+	public static final  String name = "Phantasy realms";
+	public static final String version = "0.01 ALPHA";
+	
+}
