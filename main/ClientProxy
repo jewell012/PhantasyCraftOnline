@@ -1,0 +1,84 @@
+package com.phantasyrealms.main;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.model.ModelCreeper;
+import net.minecraft.client.model.ModelSnowMan;
+import net.minecraft.client.renderer.entity.RenderBiped;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.world.storage.WorldInfo;
+
+import com.phantasyrealms.entity.EntityBoomaMob;
+import com.phantasyrealms.entity.EntityEvilSharkMob;
+import com.phantasyrealms.entity.EntityGoBoomaMob;
+import com.phantasyrealms.entity.EntityGuilSharkMob;
+import com.phantasyrealms.entity.EntityMag;
+import com.phantasyrealms.entity.EntityPalSharkMob;
+import com.phantasyrealms.entity.EntityRagRappyMob;
+import com.phantasyrealms.entity.EntityRappyMob;
+import com.phantasyrealms.entity.EntitySavageWolf;
+import com.phantasyrealms.entity.EntityTP1;
+import com.phantasyrealms.model.ModelBoomaMob;
+import com.phantasyrealms.model.ModelEvilSharkMob;
+import com.phantasyrealms.model.ModelGoBoomaMob;
+import com.phantasyrealms.model.ModelGuilSharkMob;
+import com.phantasyrealms.model.ModelMag;
+import com.phantasyrealms.model.ModelPalSharkMob;
+import com.phantasyrealms.model.ModelRagRappyMob;
+import com.phantasyrealms.model.ModelRappyMob;
+import com.phantasyrealms.model.ModelSavageWolf;
+import com.phantasyrealms.render.RenderBoomaMob;
+import com.phantasyrealms.render.RenderEvilSharkMob;
+import com.phantasyrealms.render.RenderGoBoomaMob;
+import com.phantasyrealms.render.RenderGuilSharkMob;
+import com.phantasyrealms.render.RenderMag;
+import com.phantasyrealms.render.RenderPalSharkMob;
+import com.phantasyrealms.render.RenderRagRappyMob;
+import com.phantasyrealms.render.RenderRappyMob;
+import com.phantasyrealms.render.RenderSavageWolf;
+import com.phantasyrealms.render.RenderTP1;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.FMLCommonHandler;
+import cpw.mods.fml.common.network.simpleimpl.MessageContext;
+
+public class ClientProxy extends ServerProxy{
+	
+	
+	public void registerRenderThings(){
+		
+		RenderingRegistry.registerEntityRenderingHandler(EntityGoBoomaMob.class, new RenderGoBoomaMob(new ModelGoBoomaMob(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityBoomaMob.class, new RenderBoomaMob(new ModelBoomaMob(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityRappyMob.class, new RenderRappyMob(new ModelRappyMob(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityRagRappyMob.class, new RenderRagRappyMob(new ModelRagRappyMob(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityEvilSharkMob.class, new RenderEvilSharkMob(new ModelEvilSharkMob(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityTP1.class, new RenderTP1(null, 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityMag.class, new RenderMag(new ModelMag(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntitySavageWolf.class, new RenderSavageWolf(new ModelSavageWolf(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityPalSharkMob.class, new RenderPalSharkMob(new ModelPalSharkMob(), 0));
+		RenderingRegistry.registerEntityRenderingHandler(EntityGuilSharkMob.class, new RenderGuilSharkMob(new ModelGuilSharkMob(), 0));
+
+
+		
+	}
+	
+	// In your client proxy:
+	@Override
+	public EntityPlayer getPlayerEntity(MessageContext ctx) {
+	 // Note that if you simply return 'Minecraft.getMinecraft().thePlayer',
+	 // your packets will not work because you will be getting a client
+	 // player even when you are on the server! Sounds absurd, but it's true.
+
+	 // Solution is to double-check side before returning the player:
+	 return (ctx.side.isClient() ? Minecraft.getMinecraft().thePlayer : super.getPlayerEntity(ctx));
+	}
+	
+	
+	public int addArmor(String armor){
+		return RenderingRegistry.addNewArmourRendererPrefix(armor);
+	}
+	
+
+
+	
+}
