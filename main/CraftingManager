@@ -1,0 +1,209 @@
+package com.phantasyrealms.main;
+
+import net.minecraft.item.ItemStack;
+
+import com.phantasyrealms.item.PhantasyRealmsItems;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class CraftingManager {
+	public static void mainRegistry(){
+		addCraftingRecipes();
+		addSmeltingRecipes();
+		
+	}
+	
+	
+	public static void addCraftingRecipes(){
+		//Shapeless Recipes
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber1), new Object[]{PhantasyRealmsItems.saber, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber2), new Object[]{PhantasyRealmsItems.saber1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber3), new Object[]{PhantasyRealmsItems.saber2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber4), new Object[]{PhantasyRealmsItems.saber3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber5), new Object[]{PhantasyRealmsItems.saber4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber2), new Object[]{PhantasyRealmsItems.saber, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber3), new Object[]{PhantasyRealmsItems.saber1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber4), new Object[]{PhantasyRealmsItems.saber2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber5), new Object[]{PhantasyRealmsItems.saber3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber3), new Object[]{PhantasyRealmsItems.saber, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber4), new Object[]{PhantasyRealmsItems.saber1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.saber5), new Object[]{PhantasyRealmsItems.saber2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber1), new Object[]{PhantasyRealmsItems.ssaber, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber2), new Object[]{PhantasyRealmsItems.ssaber1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber3), new Object[]{PhantasyRealmsItems.ssaber2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber4), new Object[]{PhantasyRealmsItems.ssaber3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber5), new Object[]{PhantasyRealmsItems.ssaber4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber2), new Object[]{PhantasyRealmsItems.ssaber, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber3), new Object[]{PhantasyRealmsItems.ssaber1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber4), new Object[]{PhantasyRealmsItems.ssaber2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber5), new Object[]{PhantasyRealmsItems.ssaber3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber3), new Object[]{PhantasyRealmsItems.ssaber, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber4), new Object[]{PhantasyRealmsItems.ssaber1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.ssaber5), new Object[]{PhantasyRealmsItems.ssaber2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade1), new Object[]{PhantasyRealmsItems.blade, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade2), new Object[]{PhantasyRealmsItems.blade1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade3), new Object[]{PhantasyRealmsItems.blade2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade4), new Object[]{PhantasyRealmsItems.blade3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade5), new Object[]{PhantasyRealmsItems.blade4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade2), new Object[]{PhantasyRealmsItems.blade, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade3), new Object[]{PhantasyRealmsItems.blade1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade4), new Object[]{PhantasyRealmsItems.blade2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade5), new Object[]{PhantasyRealmsItems.blade3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade3), new Object[]{PhantasyRealmsItems.blade, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade4), new Object[]{PhantasyRealmsItems.blade1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.blade5), new Object[]{PhantasyRealmsItems.blade2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade1), new Object[]{PhantasyRealmsItems.cblade, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade2), new Object[]{PhantasyRealmsItems.cblade1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade3), new Object[]{PhantasyRealmsItems.cblade2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade4), new Object[]{PhantasyRealmsItems.cblade3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade5), new Object[]{PhantasyRealmsItems.cblade4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade2), new Object[]{PhantasyRealmsItems.cblade, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade3), new Object[]{PhantasyRealmsItems.cblade1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade4), new Object[]{PhantasyRealmsItems.cblade2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade5), new Object[]{PhantasyRealmsItems.cblade3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade3), new Object[]{PhantasyRealmsItems.cblade, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade4), new Object[]{PhantasyRealmsItems.cblade1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.cblade5), new Object[]{PhantasyRealmsItems.cblade2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword1), new Object[]{PhantasyRealmsItems.sword, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword2), new Object[]{PhantasyRealmsItems.sword1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword3), new Object[]{PhantasyRealmsItems.sword2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword4), new Object[]{PhantasyRealmsItems.sword3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword5), new Object[]{PhantasyRealmsItems.sword4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword2), new Object[]{PhantasyRealmsItems.sword, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword3), new Object[]{PhantasyRealmsItems.sword1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword4), new Object[]{PhantasyRealmsItems.sword2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword5), new Object[]{PhantasyRealmsItems.sword3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword3), new Object[]{PhantasyRealmsItems.sword, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword4), new Object[]{PhantasyRealmsItems.sword1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.sword5), new Object[]{PhantasyRealmsItems.sword2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword1), new Object[]{PhantasyRealmsItems.rsword, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword2), new Object[]{PhantasyRealmsItems.rsword1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword3), new Object[]{PhantasyRealmsItems.rsword2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword4), new Object[]{PhantasyRealmsItems.rsword3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword5), new Object[]{PhantasyRealmsItems.rsword4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword2), new Object[]{PhantasyRealmsItems.rsword, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword3), new Object[]{PhantasyRealmsItems.rsword1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword4), new Object[]{PhantasyRealmsItems.rsword2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword5), new Object[]{PhantasyRealmsItems.rsword3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword3), new Object[]{PhantasyRealmsItems.rsword, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword4), new Object[]{PhantasyRealmsItems.rsword1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsword5), new Object[]{PhantasyRealmsItems.rsword2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand1), new Object[]{PhantasyRealmsItems.brand, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand2), new Object[]{PhantasyRealmsItems.brand1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand3), new Object[]{PhantasyRealmsItems.brand2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand4), new Object[]{PhantasyRealmsItems.brand3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand5), new Object[]{PhantasyRealmsItems.brand4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand2), new Object[]{PhantasyRealmsItems.brand, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand3), new Object[]{PhantasyRealmsItems.brand1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand4), new Object[]{PhantasyRealmsItems.brand2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand5), new Object[]{PhantasyRealmsItems.brand3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand3), new Object[]{PhantasyRealmsItems.brand, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand4), new Object[]{PhantasyRealmsItems.brand1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.brand5), new Object[]{PhantasyRealmsItems.brand2, PhantasyRealmsItems.trigrinder});
+		
+		//CommonWeapons
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand1), new Object[]{PhantasyRealmsItems.dbrand, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand2), new Object[]{PhantasyRealmsItems.dbrand1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand3), new Object[]{PhantasyRealmsItems.dbrand2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand4), new Object[]{PhantasyRealmsItems.dbrand3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand5), new Object[]{PhantasyRealmsItems.dbrand4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand2), new Object[]{PhantasyRealmsItems.dbrand, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand3), new Object[]{PhantasyRealmsItems.dbrand1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand4), new Object[]{PhantasyRealmsItems.dbrand2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand5), new Object[]{PhantasyRealmsItems.dbrand3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand3), new Object[]{PhantasyRealmsItems.dbrand, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand4), new Object[]{PhantasyRealmsItems.dbrand1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dbrand5), new Object[]{PhantasyRealmsItems.dbrand2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger1), new Object[]{PhantasyRealmsItems.dagger, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger2), new Object[]{PhantasyRealmsItems.dagger1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger3), new Object[]{PhantasyRealmsItems.dagger2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger4), new Object[]{PhantasyRealmsItems.dagger3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger5), new Object[]{PhantasyRealmsItems.dagger4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger2), new Object[]{PhantasyRealmsItems.dagger, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger3), new Object[]{PhantasyRealmsItems.dagger1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger4), new Object[]{PhantasyRealmsItems.dagger2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger5), new Object[]{PhantasyRealmsItems.dagger3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger3), new Object[]{PhantasyRealmsItems.dagger, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger4), new Object[]{PhantasyRealmsItems.dagger1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.dagger5), new Object[]{PhantasyRealmsItems.dagger2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger1), new Object[]{PhantasyRealmsItems.rdagger, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger2), new Object[]{PhantasyRealmsItems.rdagger1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger3), new Object[]{PhantasyRealmsItems.rdagger2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger4), new Object[]{PhantasyRealmsItems.rdagger3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger5), new Object[]{PhantasyRealmsItems.rdagger4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger2), new Object[]{PhantasyRealmsItems.rdagger, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger3), new Object[]{PhantasyRealmsItems.rdagger1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger4), new Object[]{PhantasyRealmsItems.rdagger2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger5), new Object[]{PhantasyRealmsItems.rdagger3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger3), new Object[]{PhantasyRealmsItems.rdagger, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger4), new Object[]{PhantasyRealmsItems.rdagger1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rdagger5), new Object[]{PhantasyRealmsItems.rdagger2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber1), new Object[]{PhantasyRealmsItems.rsaber, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber2), new Object[]{PhantasyRealmsItems.rsaber1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber3), new Object[]{PhantasyRealmsItems.rsaber2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber4), new Object[]{PhantasyRealmsItems.rsaber3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber5), new Object[]{PhantasyRealmsItems.rsaber4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber2), new Object[]{PhantasyRealmsItems.rsaber, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber3), new Object[]{PhantasyRealmsItems.rsaber1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber4), new Object[]{PhantasyRealmsItems.rsaber2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber5), new Object[]{PhantasyRealmsItems.rsaber3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber3), new Object[]{PhantasyRealmsItems.rsaber, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber4), new Object[]{PhantasyRealmsItems.rsaber1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.rsaber5), new Object[]{PhantasyRealmsItems.rsaber2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe1), new Object[]{PhantasyRealmsItems.baxe, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe2), new Object[]{PhantasyRealmsItems.baxe1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe3), new Object[]{PhantasyRealmsItems.baxe2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe4), new Object[]{PhantasyRealmsItems.baxe3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe5), new Object[]{PhantasyRealmsItems.baxe4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe2), new Object[]{PhantasyRealmsItems.baxe, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe3), new Object[]{PhantasyRealmsItems.baxe1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe4), new Object[]{PhantasyRealmsItems.baxe2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe5), new Object[]{PhantasyRealmsItems.baxe3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe3), new Object[]{PhantasyRealmsItems.baxe, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe4), new Object[]{PhantasyRealmsItems.baxe1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.baxe5), new Object[]{PhantasyRealmsItems.baxe2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze1), new Object[]{PhantasyRealmsItems.adze, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze2), new Object[]{PhantasyRealmsItems.adze1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze3), new Object[]{PhantasyRealmsItems.adze2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze4), new Object[]{PhantasyRealmsItems.adze3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze5), new Object[]{PhantasyRealmsItems.adze4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze2), new Object[]{PhantasyRealmsItems.adze, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze3), new Object[]{PhantasyRealmsItems.adze1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze4), new Object[]{PhantasyRealmsItems.adze2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze5), new Object[]{PhantasyRealmsItems.adze3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze3), new Object[]{PhantasyRealmsItems.adze, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze4), new Object[]{PhantasyRealmsItems.adze1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.adze5), new Object[]{PhantasyRealmsItems.adze2, PhantasyRealmsItems.trigrinder});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar1), new Object[]{PhantasyRealmsItems.scimitar, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar2), new Object[]{PhantasyRealmsItems.scimitar1, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar3), new Object[]{PhantasyRealmsItems.scimitar2, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar4), new Object[]{PhantasyRealmsItems.scimitar3, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar5), new Object[]{PhantasyRealmsItems.scimitar4, PhantasyRealmsItems.monogrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar2), new Object[]{PhantasyRealmsItems.scimitar, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar3), new Object[]{PhantasyRealmsItems.scimitar1, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar4), new Object[]{PhantasyRealmsItems.scimitar2, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar5), new Object[]{PhantasyRealmsItems.scimitar3, PhantasyRealmsItems.digrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar3), new Object[]{PhantasyRealmsItems.scimitar, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar4), new Object[]{PhantasyRealmsItems.scimitar1, PhantasyRealmsItems.trigrinder});
+		GameRegistry.addShapelessRecipe(new ItemStack(PhantasyRealmsItems.scimitar5), new Object[]{PhantasyRealmsItems.scimitar2, PhantasyRealmsItems.trigrinder});
+	
+	}
+	
+	public static void addSmeltingRecipes(){
+		
+	}
+	
+
+}
