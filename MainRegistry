@@ -1,0 +1,103 @@
+package com.phantasyrealms.main;
+
+
+import java.io.File;
+
+import org.apache.logging.log4j.LogManager;
+
+
+import org.apache.logging.log4j.Logger;
+
+import sun.net.NetworkServer;
+import sun.security.krb5.Config;
+import net.minecraftforge.common.MinecraftForge;
+
+import com.phantasyrealms.entity.EntityBoomaMob;
+import com.phantasyrealms.entity.PhantasyRealmsEntity;
+import com.phantasyrealms.item.PhantasyRealmsItems;
+import com.phantasyrealms.lib.Strings;
+
+
+
+
+
+
+
+
+
+
+import cpw.mods.fml.common.FMLCommonHandler;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.eventhandler.Event;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
+import cpw.mods.fml.relauncher.Side;
+
+@Mod(modid = Strings.MODID, name = Strings.name, version = Strings.version)
+
+public class MainRegistry {
+	
+
+
+	@SidedProxy(clientSide = "com.phantasyrealms.main.ClientProxy", serverSide = "com.phantasyrealms.main.ServerProxy")
+	public static ServerProxy proxy;
+
+	
+	@Instance(Strings.MODID)
+	public static MainRegistry modInstance;
+	public static Object instance;
+
+	
+	
+
+	
+	public class RegisterKeyBindings
+	{
+		
+		
+		
+	}
+	
+	/**
+	 * Loads before
+	 * @param PostEvent
+	 */
+	
+	@EventHandler
+	public static void PreLoad(FMLPreInitializationEvent PreEvent){
+		PhantasyRealmsEntity.mainRegistry();
+		proxy.registerRenderThings();
+		PhantasyRealmsItems.mainRegistry();
+		CraftingManager.mainRegistry();
+		
+		
+	}
+	
+	
+
+	/**
+	 * Loads during
+	 * @param event
+	 */
+	@EventHandler
+	public static void load(FMLInitializationEvent event){
+		
+		
+	}
+	
+	/**
+	 * Loads after
+	 * @param PostEvent
+	 */
+	@EventHandler
+	public static void PostLoad(FMLPostInitializationEvent PostEvent){
+
+	}
+	
+}
