@@ -1,0 +1,28 @@
+package com.phantasyrealms.item;
+
+import java.util.List;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
+
+public class ABrand extends ItemSword{
+
+	public ABrand(ToolMaterial p_i45356_1_) {
+		super(p_i45356_1_);
+		// TODO Auto-generated constructor stub
+	}
+	
+    public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
+    {
+    	par3List.add("�0�oBoss");
+
+    }
+    
+    @Override
+    public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack){
+    	return PhantasyRealmsItems.photondrop == par2ItemStack.getItem() ? true : super.getIsRepairable(par1ItemStack, par2ItemStack);
+    	}
+
+
+}
